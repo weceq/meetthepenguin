@@ -1,3 +1,5 @@
+"""meetthepenguin is an easy sign-up application for team meettings
+"""
 from pyramid.config import Configurator
 from sqlalchemy import engine_from_config
 
@@ -6,8 +8,11 @@ from .models import (
     Base,
     )
 
+__version__ = '0.0'
+__author__ = 'Dawid Grzegorz Węckowski'
+__email__ = 'weceq@tlen.pl'
 
-def main(global_config, **settings):
+def main(_, **settings):
     """ This function returns a Pyramid WSGI application.
     """
     engine = engine_from_config(settings, 'sqlalchemy.')
