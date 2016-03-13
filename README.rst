@@ -1,5 +1,5 @@
 meetthepenguin README
-==================
+=====================
 
 Getting Started
 ---------------

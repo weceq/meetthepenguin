@@ -30,6 +30,7 @@ TEST_REQUIRES = [
 DEV_REQUIRES = [
     'pylint',
     'bumpversion',
+    'sphinx',
     ]
 
 setup(name='meetthepenguin',
