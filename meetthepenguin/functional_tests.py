@@ -20,8 +20,10 @@ class FunctionalTests(unittest.TestCase):
         The user data it is persisted.
         """
         # Yarpen enters the root URL and is presented with a page (HTTP 200)
+        response = self.testapp.get("/", status=200)
 
         # The page presents meetthepenguin app
+        self.assertIn("meetthepenguin", response.html.title.text)
 
         # The page contains a list of events to which Yarpen is subscribed
 
